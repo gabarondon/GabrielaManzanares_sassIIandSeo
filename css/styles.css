@@ -1,0 +1,148 @@
+.title-style, .container__ppaltext h1 {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+/* Nav */
+header nav {
+  background-color: #131313;
+}
+header nav .nav-link {
+  color: white;
+}
+header nav .nav-link:hover {
+  color: #e6017e;
+  font-weight: 500;
+}
+header nav .nav-link:active {
+  color: #d60076;
+}
+header nav .navbar-toggler {
+  border-color: white;
+}
+header nav .navbar-icon {
+  color: white;
+}
+header .hero {
+  animation: from-top 2s ease;
+}
+@keyframes from-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+header .hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+header .hero span:hover {
+  color: #e6017e;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  header .navbar-brand {
+    display: flex;
+    width: 60%;
+  }
+  header .container__ppaltext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  header .container__ppaltext h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header h1,
+header h2 {
+    font-size: 3rem;
+  }
+  header .text-experience,
+header .downArrows,
+header .my-text {
+    font-size: 2rem;
+  }
+}
+
+.container__ppaltext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+/* Main */
+main h2 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+main .container__image {
+  max-height: 200px;
+  overflow: hidden;
+  animation: scaledown 0.4s linear;
+  animation-fill-mode: forwards;
+  /* Animacion portafolio */
+  /* Animacion portafolio cierre */
+}
+main .container__image:hover {
+  z-index: 100;
+  animation: scale 0.4s linear;
+  animation-fill-mode: forwards;
+  opacity: 0.8;
+}
+@keyframes scaledown {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes reboteIn_abajo {
+  0% {
+    opacity: 0;
+    transform: translateY(100vw);
+  }
+  50% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(10px);
+  }
+}
+main #portfolio {
+  animation: reboteIn_abajo 5s 1;
+}
+main form .buttonContact {
+  background-color: #e6017e;
+  border-style: none;
+  height: 40px;
+}
+main form .buttonContact:hover {
+  background-color: #d60076;
+}
+main form .buttonContact:active {
+  background-color: #d60076;
+}
+
+/*# sourceMappingURL=styles.css.map */
